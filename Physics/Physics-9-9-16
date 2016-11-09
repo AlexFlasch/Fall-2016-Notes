@@ -1,0 +1,55 @@
+#Physics 9/9/16
+
+##Nature of Physics & Units (cont'd)
+
+* Physicists generally favor mental depth over mental speed
+* They also prefer conceptualization over memorization
+
+###Units
+
+**_Unit_**: quantity of measurement, usually standard  
+Units used in this class:
+
+* meter [m]
+* kilogram [kg]
+* second [s]
+
+A = area ( m^2, cm^2, mm^2 )  
+V = volume ( m^3, cm^3, mm^3 )
+
+$v$ = speed = $\frac{m}{s}$  
+$\rho$ = density = $\frac{kg}{m^3}$  
+$F$ = force = $kg \frac{m}{s^2}$ or $\frac{kg * m}{s^2}$
+
+####Unit Conversion
+
+V = 5 $\frac{m}{s}$  
+V = $? \frac{m}{s}$
+
+**Ex 1**  
+1. $\frac{5 m}{1 s}$  
+2. $\frac{5 m}{1 s} * ( \frac{1km}{1000m} ) * ( \frac{1mi}{1.609km} ) * ( \frac{3600s}{1hr} )$  
+3. Cancel $m$, $km$, $s$ and you're left with miles and hours as units.
+
+**Ex 2**
+1. 2 0.5m radius circles, 1 1m radius circle  
+2. $A = \pi r^2$  
+3. $A = 2(\pi * 0.5^2) + \pi$  
+4. $A = 4.7124m^2$  
+5. Convert to cm^2  
+6. $4.7124 * \frac{100cm}{1m} * \frac{100cm}{1m} = 47124 cm^2$
+
+
+##Scientific Models & More Units
+
+###More units
+
+$x$ = position $m$  
+$v$ = speed/velocity $\frac{m}{s}$  
+$a$ = acceleration $\frac{m}{s^2}$  
+
+$v = At^3 - Bt$  
+$A$ and $B$ being constants  
+$At^3$ and $Bt$ are terms  
+$A$, $t^3$ are factors in the term $At^3$ and $B$ and $t$ are factors in the term $Bt$  
+

@@ -1,0 +1,43 @@
+#Stats 10/4/16
+
+##Probabilistic Addition
+
+###Experiments, Outcomes, and Events
+
+An *experiment* is an activity that involves chance.  
+Experiments must have well defined *outcomes*, a list of all the possible things that could occur as a result of the experiment.  
+The *event* represents the outcomes of interest.  
+
+The probability of an event *A* is simply:  
+$Pr(A) = \frac{\text{# of outcomes}}{\text{total # of outcomes}}$
+
+If our event of interest is $Pr(\text{face card})$, then:  
+$Pr(A) = \frac{12}{52} = 0.23$
+
+
+###Probabilistic Addition
+
+A *joint event*, often called the *intersection*:  
+Where $Pr(A \text{and} B)$ is the *joint probability* of occurance.
+
+$Pr(A \land B) = \frac{\text{# of shared outcomes}}{\text{total # of outcomes}}$
+
+A compound event is formally defined as the *union* of two or more individual events  
+Example: Compute $Pr(\text{king} \lor \text{ace})$  
+$ = \frac{4}{52} + \frac{4}{52}$  
+$ = \frac{8}{52}$  
+$ = \frac{2}{13}$  
+
+joint: $A \cap B$  
+union: $A \cup B$
+
+The *complement* of an event is a set of all outcomes **not included** in the event itself.  
+The probabilities of $A$ and $\lnot A$ must sum to one
+
+
+## Probabilistic Multiplication
+
+
+
+
+## Counting

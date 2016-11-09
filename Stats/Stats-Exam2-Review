@@ -1,0 +1,80 @@
+#Stats 10/27/16
+
+##Exam 2 review
+
+Chapters to review:
+
+* Basic probability
+* Discrete probability
+* Continuous probability
+
+Undertsand Experiments, Outcomes, and Events
+
+*experiment* is anything that involvs chance  
+*outcome* is a possible thing that could occur as a result of an experiment  
+*events* represent the outcomes of interest
+
+Probability of rolling a fair six-sided die:  
+$Pr(A) = \frac{\text{num outcomes in event A}}{\text{total outcomes}}$  
+
+Probabilistic addition:
+
+* intersection
+* union
+* mutually exclusive events
+* complements of an event
+
+$Pr(A \lor B) = Pr(A) + Pr(B) - Pr(A \land B)$
+
+###Expected Value and Variance  
+A discrete random variable has a location analogous to the average called the *expected value* often denoted $E(X)$
+
+$E(X) = \sum\limits_{t=1}^T Pr(X = x_t)x_t$ where T is the number of events defined by the random variable
+
+Variance is the dispersion in the probability of the possible outcomes
+
+$V(X)$ of $X$ is $V(X) = \sum\limits_{t=1}^T Pr(X = x_t)[x_t - E(X)]^2$ where $T$ is the number of events defined by the random variable
+
+###Binomial distribution
+
+bionomial experiments must meet the following:
+
+1. Each $n$ trials has two possible outcomes: success or failure
+2. Probability of success is denoted by $\pi$ and stays the same across trials
+3. Trials are identical
+4. Trials are independent
+5. Random variable counts the number of successes in the $n$ trials
+
+We let $k$ denote teh number of successes occuring in the $n$ trials
+
+Binomial probability: $Pr(X = k) = {n \choose k} \pi^k (1 - \pi)^{n-k}$
+
+###Continuous probability
+
+Continuous events are measured over intervals
+
+###Normal Distribution
+
+The standard normal is represented by the variable $Z$.
+
+$Z \equiv \frac{X - \mu}{\sigma}$
+
+Z transformation:
+
+1. Start with normal random variable X
+2. Subtract off the mean of X
+3. Divide by standard deviation of X
+
+Solving normal probability problems
+
+1. Draw picture of X dist and shade area attempting to cmpute
+2. Apply Z transformation
+3. Draw picture of Z dist and shade area you are trying to compute
+4. Use standard normal...
+
+Suppose X ~ N(5, 4); that is, the random variable X follows a normal distrubtion with mean $\mu = 5$ and standard deviation $\sigma = 4$. Compute $Pr(X > 9)$. To solve follow the four step method.
+
+1. eh
+2. Use z transformation. Apply z transformation to everything inside
+	a.
+3. 

@@ -1,0 +1,38 @@
+#Physics 9/12/16
+
+
+##Vectors
+
+A _**vector**_ is a number that has maginutde and direction.  
+A vector is also usually represented as an arrow graphically.  
+In mathematical equations vectors are represented as $\vec{A}$
+The absolute magnitude is represented as $|\vec{A}|$
+
+
+###Components
+
+In order to perform _**Vector Decomposition**_, you generally need to introduce a coordinate system.  
+Generally the axes are labeled $x$ and $y$.  
+The $x$ component, or horizontal component will be the distance traveled along the $x$ axis.  
+Similarly, the $y$ component, or vertical component will be the distance traveled along the $y$ axis.  
+The components are written $A_x$ or $A_y$ when referring to $\vec{A}$.
+
+In the reverse, _**Vector Composition**_ will take the components of a vector and create a vector with magnitude and direction.  
+Magnitude is obtained from the two $x$ and $y$ components by performing the Pythagorean Theorem.  
+$|\vec{A}|^2 = A_x^2 + A_y^2$  
+Direction is obtained by obtaining the angle ($\theta$) of the vector line in relation to the $x$ axis.  
+SOH: $sin(\theta) = \frac{opposite}{hypotenuse}$  
+CAH: $cos(\theta) = \frac{adjacent}{hypotenuse}$  
+TOA: $tan(\theta) = \frac{opposite}{adjacent}$  
+
+
+###Addition
+
+$\vec{A} = (3, 2)$ units  
+$\vec{B} = (2, 3)$ units
+
+What would $\vec{C}$ be if $\vec{C} = \vec{A} + \vec{B}$?  
+$C_x = A_x + B_x$ and $C_y = A_y + B_y$,  
+So, $\vec{C} = (5, 5)$ units
+
+Subtraction essentially works the same way. 

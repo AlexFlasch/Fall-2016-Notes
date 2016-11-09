@@ -1,0 +1,89 @@
+#Algorithms 9/30/16
+
+##Solving recurrences
+
+###$T(N) = 9T(\frac{N}{3}) + N$
+
+1. $a = 9, b = 3, f(N) = N = \Theta(N)$
+2. $log_3 9 = 2$
+3. $N = f(N) = O(N^{2-\epsilon})$ ? (Does this satisfy the condition?)
+4. Since $N^{2 - \epsilon}$ can satisfy this condition, the first condition of the master theorem applies
+5. case 1: $T(N) = \Theta(N^2)$
+
+
+###$T(N) = 3T(N/4) + N \cdot log(N)$
+
+1. $a = 3, b = 4, f(N) = N log(N)$
+2. $log_b^a \rightarrow log_4^3 < 1$
+3. Is $f(N) = O(N^{log_4^3 - \epsilon})$? No. 
+4. Is $f(N) = \Theta(N^{log_4^3 - \epsilon})$? No.
+5. Is $f(N) = \Omega(N^{log_4^3 + \epsilon})$? Yes!
+6. $a \cdot f(\frac{N}{b}) \leq c \cdot f(N)$
+7. $3 * f(\frac{N}{4} = 3 \cdot \frac{N}{4} \cdot log(\frac{N}{4})$
+8. $ = \frac{3}{4} N (log(N) - log(4))$
+9. $ \leq \frac{3}{4} N \cdot log(N)$
+10. $ = \frac{3}{4} f(N)$
+11. So, $T(N) = \Theta(f(N)) = \Theta(N \cdot log(N))$
+
+
+###$T(N) = T(\frac{2N}{3}) + 1$
+
+1. $a = 1, b = \frac{3}{2}, f(N) = 1$
+2. $log_{\frac{3}{2}} 1 = 0$
+3. $N^0 = 1 = \Theta(1)$
+4. $1 = \Theta(1)$
+5. This satisfies case 2.
+6. $T(N) = \Theta(N^{log_{\frac{3}{2}}} \cdot log(N))$
+7. $ = \Theta(log(N))$
+
+
+###$T(N) = 2T(\frac{N}{2}) + N \cdot log(N)$
+
+1. $a = 2, b = 2, f(N) = N \cdot log(N)$
+2. $log_2 2 = 1$
+3. $O(N^{1 - \epsilon})$ No.
+4. $\Omega(N^{1 + \epsilon})$ Yes!
+5. $f(N) = \Omega(N^{1 + \epsilon})$? 
+6. $N * N^\epsilon$ where $\epsilon > 0$
+7. $(log(N))^k = o(N^\epsilon)$
+8. This won't work, the master theorem can't solve everything.
+
+
+##Some moar divide and conquer
+
+Some applications:  
+
+* Multiplication of large integers.
+* 2D peak finding
+
+###Multiplying integers
+
+Input: two N-digit integers $P$ and $Q$  
+We'll assume $P$ and $Q$ are positive and comprised of $2^k$ digits.  
+(These assumptions can be relaxed "somewhat" easily
+
+Output: $P \cdot Q$
+
+How many digits is $P \cdot Q$?
+
+What is the running time of the most obvious algorithm?  
+N^2
+
+
+###Kolmogrov's multiplication
+
+1. Split $P$ and $Q$ into two halves.
+2. If $P = 61438521$, then $P_L = 6143$ and $P_R = 8521$
+3. $P = P_L \cdot 10^4 + P_R$
+4. Same for $Q$
+
+Basic strategy:
+
+1. Write $P \cdot Q$ in terms of $P_L, P_R, Q_L, Q_R$
+2. $P \cdot Q = P_L * Q_L \cdot 10^8 + (P_L \cdot Q_R + P_R \cdot Q_L) \cdot 10^4 + P_R \cdot Q_R$
+3. Multiplication of two N-digit numbers: $T(N)$
+4. Multiplication by 10^N is a special case: $\Theta(N)$
+5. Addition of two N-digit numbers: $\Theta(N)$
+6. Running time of computing $P \cdot Q$ : $T(N) = 4T(\frac{N}{2}) + \Theta(N)$
+7. By the master theorem, we get $T(N) = \Theta(N^2)$
+
